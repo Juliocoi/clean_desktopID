@@ -2,7 +2,7 @@
 
 Este guia acompanha o script `clean_desktopID.sh`. Ele foi criado especificamente para advogados que utilizam o certificado digital A3 em nuvem no **macOS** e estão enfrentando problemas para acessar ou assinar documentos no PJe.
 
-Muitas vezes, apenas excluir e reinstalar o aplicativo da Certisign não resolve o problema. Isso acontece porque o Mac guarda "arquivos fantasmas" (configurações ocultas e antigas) que continuam atraphando o sistema.
+Muitas vezes, apenas excluir e reinstalar o aplicativo da Certisign não resolve o problema. Isso acontece porque o Mac guarda "arquivos fantasmas" (configurações ocultas e antigas) que continuam atraphando o sistema. Por isso, mesmo que você já tenha desinstalado o aplicativo pelo meio convencional (jogando seu ícone na lixeira), este script ainda pode ser útil.
 
 **O que este script faz?**
 Ele realiza uma "faxina profunda". Ele encerra o aplicativo, apaga o programa e varre o seu Mac em busca de todos os arquivos temporários e configurações residuais. Assim, ao reinstalar o DesktopID, o sistema o reconhecerá como se fosse a primeira vez, resolvendo a maioria dos erros de comunicação.
@@ -15,10 +15,12 @@ Siga os passos abaixo exatamente na ordem. Você não precisa saber programaçã
 
 Para baixar o script de forma segura e direta, siga estes passos:
 
-1. Clique neste link para acessar a página do arquivo: 👉 [**Clean_desktopID - Github**](https://github.com/Juliocoi/clean_desktopID)
-2. Na página que abrir, procure pelo botão **Download raw file** (é um pequeno ícone com uma setinha apontando para baixo ⬇️, localizado no lado direito da tela, logo acima do código).
-3. Ao clicar nesse botão, o arquivo `clean_desktopID.sh` será salvo automaticamente na sua pasta de **Downloads** (Transferências). 
-4. **Importante:** Mantenha o arquivo na pasta de Downloads e não tente dar dois cliques para abri-lo.
+1. Clique no botão <span style="color:#2A903C">**<> Code**</span>, que fica localizado no canto superior direito, pouco acima da janela deste texto, e depois em Download ZIP.   
+2. Ao clicar nesse botão, o arquivo `clean_desktopID-main.zip` será salvo automaticamente na sua pasta de **Downloads** (Transferências). 
+3. Dê um duplo-clique no arquivo para extrair a pasta `clean_desktopID-main`. A pasta conterá dois arquivos: 
+   * clean_desktopID.sh -> O arquivo que importa.
+   * Readme.md -> Um arquivo que é a cópia exata das instruções que você está lendo neste exato momento. 
+4. **Importante:** Mantenha o arquivo na pasta gerada ao descompactá-la e não tente dar dois cliques para abri-lo.
 
 ### 2. Abra o Terminal do Mac
 
@@ -32,7 +34,7 @@ O Terminal é uma ferramenta do próprio sistema do Mac. Para abri-lo:
 Com a janela do Terminal aberta, copie a linha de texto abaixo, cole dentro do Terminal e aperte `Enter`:
 
 ```
-zsh ~/Downloads/clean_desktopID.sh
+zsh ~/Downloads/clean_desktopID-main/clean_desktopID.sh
 ```
 
 ### 4. Digite a sua senha do Mac
